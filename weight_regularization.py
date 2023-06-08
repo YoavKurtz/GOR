@@ -1,7 +1,6 @@
 """
 Contains code for group weight orthogonalization via regularization. Both inter-group and intra-group.
 """
-import tabnanny
 from typing import List
 import torch
 import re
@@ -62,6 +61,15 @@ def inter_reg_loss(w: torch.tensor, group_size: int, num_groups: int):
 
 
 def check_need_to_regularize(module: torch.nn, name: str, reg_fc: bool, names_to_reg: List[str]) -> bool:
+    """
+    Check if we should regularize the input module via GOR.
+    :param module: current input pytorch module
+    :param name: module's name
+    :param reg_fc: whether we should also apply GOR to fully-connected layers.
+    :param names_to_reg: list of regular expression terms that should be contained within the module name for it
+        to be regularized.
+    :return: True if the current module should be regularized by GOR, False otherwise.
+    """
     if isinstance(module, torch.nn.Conv2d) or (reg_fc and isinstance(module, torch.nn.Linear)):
         if module.weight.requires_grad:
             # Verify that name meets the filtering criterion
@@ -117,4 +125,3 @@ def calc_group_reg_loss(model: torch.nn.Module, num_groups: int, reg_type: str, 
                 raise Exception(f'Unsupported mode {reg_type}')
 
     return total_reg_value
-

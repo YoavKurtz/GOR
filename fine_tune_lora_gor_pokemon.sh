@@ -14,5 +14,4 @@ torchrun --standalone --nnodes=1 --nproc_per_node=2 train_text_to_image_lora.py 
       --checkpointing_steps=5000 \
       --validation_prompt="cute dragon creature" \
       --seed=42 \
-      --cache_dir=/mnt5/yoavkurtz/GroupOrtho/DiffusersLora/hf_downloads/ \
       --str_filters=up_blocks.*_lora\.up --num_groups=32 --reg_type=inter --ortho_decay=1e-6
