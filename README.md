@@ -1,4 +1,4 @@
-# GROUP ORTHOGONALIZATION REGULARIZATION
+# Group Orthogonalization Regularization
 
 ---
 [GROUP ORTHOGONALIZATION REGULARIZATION](TODO enter link here for paper)  (GOR) is a weight
