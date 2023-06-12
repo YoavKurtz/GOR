@@ -6,7 +6,7 @@ regularization technique that promotes orthonormality between groups of filters 
 same layer. GOR complements existing normalization techniques, such as BN and GN, and
 can be applied to a wide range of deep-learning models.
 
-![GOR vis](groups_vis.png)
+![GOR vis](docs/static/images/groups_vis.png)
 
 ## Naive Implementation
 
