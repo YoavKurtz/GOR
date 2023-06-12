@@ -2,25 +2,29 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
-    <meta name="description" content="DESCRIPTION META TAG">
-    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <meta name="description"
+          content="Group Orthogonalization Regularization project page, a computationally efficient regularization technique
+          that encourages orthonormality between groups of filters within the same layer">
+    <meta property="og:title" content="Group Orthogonalization Regularization (GOR)"/>
+    <meta property="og:description" content="GOR, a computationally efficient regularization technique
+          that encourages orthonormality between groups of filters within the same layer"/>
+    <meta property="og:url" content="https://yoavkurtz.github.io/gor"/>
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-    <meta property="og:image" content="static/image/your_banner_image.png"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
+<!--    <meta property="og:image" content="static/images/groups_vis_banner.png"/>-->
+<!--    <meta property="og:image:width" content="748"/>-->
+<!--    <meta property="og:image:height" content="694"/>-->
 
 
-    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <meta name="twitter:title" content="Group Orthogonalization Regularization (GOR)">
+    <meta name="twitter:description" content="GOR, a computationally efficient regularization technique
+          that encourages orthonormality between groups of filters within the same layer">
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- Keywords for your paper to be indexed by-->
-    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+<!--    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">-->
+<!--    <meta name="twitter:card" content="summary_large_image">-->
+<!--    &lt;!&ndash; Keywords for your paper to be indexed by&ndash;&gt;-->
+    <meta name="keywords" content="deep-learning regularization orthogonal-weights diffusion-models">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -193,14 +197,14 @@
             <div id="results-carousel" class="carousel results-carousel">
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/pokemon.png" alt="MY ALT TEXT"/>
+                    <img src="static/images/pokemon.png" alt="pokemon-blip generation comparison"/>
                     <h2 class="subtitle has-text-centered">
                         Pokemon-BLIP results. Our method improves the generation quality by removing artifacts
                     </h2>
                 </div>
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/flowers.png" alt="MY ALT TEXT"/>
+                    <img src="static/images/flowers.png" alt="Oxford102 generation comparison"/>
                     <h2 class="subtitle has-text-centered">
                         Oxford102 results. For the generation of the flowers themselves, the two models are comparable
                         with similar
@@ -211,9 +215,9 @@
                 </div>
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/sketch.png" alt="MY ALT TEXT"/>
+                    <img src="static/images/sketch.png" alt="FS-COCO generation comparison"/>
                     <h2 class="subtitle has-text-centered">
-                        Our method improves the generation quality by both aligning with the text prompt more closely
+                        FS-COCO results. Our method improves the generation quality by both aligning with the text prompt more closely
                         (second image from
                         the right) and by removing artifacts.
                     </h2>
