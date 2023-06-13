@@ -1,7 +1,7 @@
 # Group Orthogonalization Regularization
 
 ---
-###[Project Page](https://yoavkurtz.github.io/GOR/)
+### [Project Page](https://yoavkurtz.github.io/GOR/)
 
 GROUP ORTHOGONALIZATION REGULARIZATION (GOR) is a weight
 regularization technique that promotes orthonormality between groups of filters within the
