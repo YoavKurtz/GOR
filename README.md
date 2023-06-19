@@ -1,7 +1,7 @@
 # Group Orthogonalization Regularization
 
 ---
-### [Project Page](https://yoavkurtz.github.io/GOR/)
+### [Project Page](https://yoavkurtz.github.io/GOR/) | [Paper](https://arxiv.org/abs/2306.10001)
 
 GROUP ORTHOGONALIZATION REGULARIZATION (GOR) is a weight
 regularization technique that promotes orthonormality between groups of filters within the
@@ -66,14 +66,21 @@ following tasks:
 
   :arrow_forward: Fine-tune SD 1.5 with LoRA and GOR on Pokemon-BLIP on 2 GPUs by running `fine_tune_lora_gor_pokemon.sh`.
   
-[comment]: <> (## Citation)
+## Citation
 
-[comment]: <> (```)
-
-[comment]: <> (```)
+```
+@misc{kurtz2023group,
+      title={Group Orthogonalization Regularization For Vision Models Adaptation and Robustness}, 
+      author={Yoav Kurtz and Noga Bar and Raja Giryes},
+      year={2023},
+      eprint={2306.10001},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ### TODO
 - [X] Add requirement.txt
 - [x] Add cmds for running the training with GOR
-- [ ] Enter paper citation and link to paper/project.
+- [x] Enter paper citation and link to paper/project.
 - [ ] Consider adding more examples.
