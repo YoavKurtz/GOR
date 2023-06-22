@@ -69,13 +69,11 @@ following tasks:
 ## Citation
 
 ```
-@misc{kurtz2023group,
-      title={Group Orthogonalization Regularization For Vision Models Adaptation and Robustness}, 
-      author={Yoav Kurtz and Noga Bar and Raja Giryes},
-      year={2023},
-      eprint={2306.10001},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{kurtz2023group,
+  title={Group Orthogonalization Regularization For Vision Models Adaptation and Robustness},
+  author={Kurtz, Yoav and Bar, Noga and Giryes, Raja},
+  journal={arXiv preprint arXiv:2306.10001},
+  year={2023}
 }
 ```
 
