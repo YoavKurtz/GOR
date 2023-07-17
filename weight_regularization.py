@@ -116,7 +116,7 @@ def calc_group_reg_loss(model: torch.nn.Module, num_groups: int, reg_type: str, 
             if reg_type == 'intra':
                 if group_size == 1:
                     # corner case. Same as forcing all c_out filters to be ortho
-                    total_reg_value += calc_dist(w)
+                    total_reg_value += calc_dist(w.unsqueeze(0))  # calc_dist expects 3d tensor
                 else:
                     total_reg_value += intra_reg_loss(w, group_size, actual_num_groups)
             elif reg_type == 'inter':
